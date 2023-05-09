@@ -1,0 +1,66 @@
+@charset "UTF-8";
+body {
+    background-color: rgb(176, 174, 174);
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    background-color: white;
+    width: 700px;
+    padding: 10px;
+    border-radius: 15px;
+    margin: auto;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.356);
+}
+
+h1 {
+    color: black;
+    font: bold 2em 'Times New Roman', serif;
+    text-align: center;
+}
+
+h2 {
+    color: black;
+    font: bold 1.5em 'Times New Roman', serif;
+}
+
+h3 {
+    color: black;
+    font: normal bold 1.3em 'Times New Roman', sans-serif;
+}
+
+p {
+    text-align: justify;
+    text-indent: 3em;
+}
+
+#titulo-principal {
+    background-color: rgb(124, 103, 240);
+    color: white;
+    border-radius: 5px;
+    padding: 10px ;
+    font-size: 2.5em;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.364);
+}
+
+.titulo {
+    background-color: rgb(244, 54, 54);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.364);
+}
+
+.basico {
+    color: rgb(53, 124, 53);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.162);
+}
+
+.intermediario {
+    color: rgb(220, 220, 12);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.162);
+}
+
+.avançado {
+    color: rgb(240, 79, 79);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.162);
+}

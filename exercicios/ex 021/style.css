@@ -1,0 +1,105 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightcoral;
+    margin: 0px;
+}
+
+p {
+    text-align: justify;
+}
+
+header{
+    background-color: rgb(68, 68, 196);
+    padding: auto;
+    border-radius: 15px;
+    width: 1000px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.259);
+    border: 1px solid black;
+}
+
+nav {
+    width: 300px;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: azure;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.293);
+}
+h1 {
+    text-align: center;
+}
+
+main {
+    background-color: rgb(115, 115, 239);
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.329);
+    width: 1000px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.337);
+}
+section {
+    background-color: rgb(186, 88, 88);
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.303)
+}
+
+h2 {
+    text-align: left;
+}
+
+#noticias {
+    background-color: beige;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.303);
+}
+
+#divulgaçoes {
+    background-color: rgb(0, 255, 170);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.282);
+}
+article > aside {
+    background-color: cyan;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+#extras {
+    background-color: cadetblue;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.39);
+    margin: 10px auto ;
+}
+
+aside {
+    background-color: burlywood;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 5px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.332);
+}
+
+footer {
+    height: 200px;
+    background-color: black ;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}

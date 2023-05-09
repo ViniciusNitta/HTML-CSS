@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando Listas</title>
+    <link rel="shortcut icon" href="dog.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Listas</h1>
+    <h2>Listas ordenadas</h2>
+        <p>É possível criar listas ordenadas usando a tag OL(ordered lists) e completando com a tag LI(list itens), exemplo de lista:</p>
+        <ol>
+            <li>Amendoim</li>
+            <li>Sem</li>
+            <li>Casca</li>
+        </ol>
+        <p>A tag OL pode ser alterada usando o TYPE para algumas variações no lugar do número(está sendo a configuração padrão):</p>
+        <ol type="A">
+            <li>Amendoim</li>
+            <li>Sem</li>
+            <li>Casca</li>
+        </ol>
+        <ol type="a">
+            <li>Amendoim</li>
+            <li>Sem</li>
+            <li>Casca</li>
+        </ol>
+        <ol type="I">
+            <li>Amendoim</li>
+            <li>Sem</li>
+            <li>Casca</li>
+        </ol>
+        <ol type="i">
+            <li>Amendoim</li>
+            <li>Sem</li>
+            <li>Casca</li>
+        </ol>
+        <p>Em sequência temos o uso das tags:
+            <br>&lt;ol&gt;, modelo padrão, utiiza números;
+            <br>&lt;ol type="A"&gt;, altera para letra maiúscula;
+            <br>&lt;ol type="a"&gt;, altera para letra minúscula;
+            <br>&lt;ol type="I"&gt;, altera para algarismos romanos maiúsculos;
+            <br>&lt;ol type="i"&gt;, altera para algarismos romanos minúsculos.
+        </p>
+    <h2>Listas não ordenadas</h2>
+        <p>As listas não ordenadas são listas que não possuem uma sequência a ser seguida, dessa maneira elas apresentam apenas os pontos, mas não os classifica, estás podem ser criadas usando a tag UL(unordered list) e colocando as LI dentro delas normalmente.</p>
+        <ul>
+            <li>Amendoim</li>
+            <li>Sem</li>
+            <li>Casca</li>
+        </ul>
+        <p>Existem também algumas variações dentro da tag UL usando o complemento TYPE:</p>
+        <ul type="circle">
+            <li>Amendoim</li>
+            <li>Sem</li>
+            <li>Casca</li>
+        </ul>
+        <ul type="square">
+            <li>Amendoim</li>
+            <li>Sem</li>
+            <li>Casca</li>
+        </ul>
+        <p>Em sequência temos o uso das tags:
+            <br>&lt;ul&gt;, modelo padrão, utiliza o círculo preenchido;
+            <br>&lt;ul type="circle"&gt;, altera para um círculo vazio;
+            <br>&lt;ul type="square"&gt;, altera para um quadrado;
+        </p>
+    <h2>Misturando as listas</h2>
+        <p>É possível criar listas dentro de listas, listas ordenadas com listas não ordenadas, com isso abre muitas possibilidades de modelos diferentes, como por exemplo:</p>
+
+        <p>Campeões que eu jogo no LOL</p>
+            <ul type="square">
+                <li>Top</li>
+                    <ol type="I">
+                        <li>GP</li>
+                        <li>Gnar</li>
+                        <li>Fiora</li>
+                    </ol>
+                <li>Jungle</li>
+                    <ol type="I">
+                        <li>Lee Sin</li>
+                        <li>Evellyn</li>
+                        <li>Kayn</li>
+                    </ol>
+                <li>Mid</li>
+                    <ol type="I">
+                        <li>Akali</li>
+                        <li>Ryze</li>
+                        <li>Yone</li>
+                    </ol>
+                <li>Adc</li>
+                    <ol type="I">
+                        <li>Ezreal</li>
+                        <li>Zeri</li>
+                        <li>Kaisa</li>
+                    </ol>
+                <li>Sup</li>
+                    <ol type="I">
+                        <li>Não jogo sup eheheheh</li>
+                    </ol>
+            </ul>
+        <p>**Caso seja necessário começar a lista fora de ordem, por exemplo começar pelo número 3,4,5... , é só adicionar start="x" depois da tag OL ou UL, e caso tenha TYPE, depois do type.</p>
+    <h2>Lista de definições</h2>
+        <p>É possível criar listas onde não existem marcadores, está lista é como se fosse um dicionário, onde tem o termo e depois a sua definição, para criar este tipo de lista utiliza-se a tag DL(definition list) e dentro dessa lista nós temos as DT(definition terms) e as DD(definition description), por exemplo:</p>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Linguagem de marcação onde está inserido o conteúdo do site, trabalha com tags semânticas onde definimos significados ao conteúdo.</dd>
+            <dt>CSS</dt>
+            <dd>Linguagem de marcação para a parte de estilo, está trabalha com a parte visual do site, nela definimos principalmente a forma do conteúdo.</dd>
+            <dt>HTML</dt>
+            <dd>Linguagem de programação para as interações do site, nela trabalhamos com códigos que visam uma melhor experiência ao usuário por meio de interações.</dd>
+        </dl>
+        <p>** Uma dica para mudar varías tags iguais de uma vez é segurar Alt e ir selecionando as tags que devem ser mudadas com o cursor do mouse no meio delas.</p>
+
+</body>
+</html>

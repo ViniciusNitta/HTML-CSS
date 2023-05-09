@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="dog.ico" type="image/x-icon">
+    <title>Formatação de textos</title>
+    <style>
+        mark {background-color: rgb(221, 253, 62);}
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+        <h2>Negrito/Destaque</h2>
+            <p>É possível usar negrito de duas maneiras, a considerada semântica e a não semântica:</p>
+            <p>
+                A primeira é a maneira não semântica, em que utilizamos a tag &lt;b&gt;, por exemplo:
+                <br> Nesta frase temos um <b>termo em negrito</b>.</p>
+            <p>
+                E a segunda é a maneira semântica, em que utilizamos a tag &lt;strong&gt;, por exemplo:
+               <br> Nesta frase temos um <strong>termo em destaque</strong>. </p>
+
+        <h2>Itálico/Ênfase</h2>
+            <p>Como com o negrito, podemos deixar um termo em itálico de duas maneiras:</p>
+            <p>
+                A primeira é a maneira não semântica, em que utilizamos a tag &lt;i&gt;, por exemplo:
+                <br> Nesta frase temos um <i>termo em itálico</i>
+            </p>
+            <p>
+                E a segunda é a maneira semântica, em que utilizamos a tag &lt;em&gt;, por exemplo:
+                <br> Nesta frase temos um <em>termo em ênfase</em>.
+            </p>
+        <p>É bom sempre usar as tags que vão dar uma semântica (significado) ao termo desejado, utilizando as tags STRONG e EM, dessa maneira dando um significado de Destaque ou Ênfase para o termo, em vez de dar forma de Negrito ou Itálico para o mesmo.</p>
+    <p>**Selecionando os termos desejados e apertando Ctrl+Shift+P depois escolhendo a opção 'Emmet: Envolver com Abreviação', podemos colocar os termos dentro da tag de maneira mais rápida (não é necessario digitar os &lt;&gt;apenas o comando da tag.).</p>
+        <h2>Marcação de texto</h2>
+            <p>Podemos usar a <mark>marcação de texto</mark> durante nossos codígos, usando a tag MARK.
+                <br>Também é possível mudar a <mark style="background-color: rgb(43, 226, 86);">cor da marcação</mark> usando as CSS, a tag utilizada é: style="background-color:xxxxxx" que deve estar depois da tag mark de abertura.
+            </p>
+            <p>Outra maneira é ir no cabeçalho e criar uma tag STYLE assim mudando a cor de todos as marcações (No caso de alguma marcação específica ter uma cor programada dentro da sua tag individual, está será alterada normalmente):
+                <br>Exemplo: &lt;style&gt; mark {background-color:xxxxxxx} &lt;/style&gt;
+            </p>
+
+        <h2>Texto grande e pequeno</h2>
+            <p>Podemos mudar o tamanho das letras utilizando a tag BIG para <big>aumentar</big> uma determinada palavra, e a tag SMALL para <small>diminuir</small>.
+                <br> Uma curiosidade é que a tag BIG está obsoleta para o HTML5 então logo poderá deixar de funcionar, porém a tag SMALL continua funcionando normalmente, não existe uma explicação concreta para isto, mas acredita-se que as letras miúdas possuem um significado de importância dentro de contratos e para determinadas citações, então por isso ela ainda entra dentro da semântica do HTML, mas as letras maiores não possuem realmente um significado para existirem além de uma questão estética.
+            </p>
+        <h2>Texto deletado e inserido</h2>
+            <p>Podemos marcar um texto como <del>excluído</del> para indicar que ele deve ser lido usando a tag DEL, mas não considerado.
+                <br>A tag &lt;<strike>strike</strike>&gt; tem a mesma função, porém com a questão dela não ser semântica.
+            </p>
+            <p>E também marcar um texto como <ins>inserido</ins> para podermos dar uma ênfase no fato dele ter sido adicionado posteriormente usando a tag INS.
+                <br>A tag &lt;<u>u</u>&gt; possui a função de sublinhar um texto, mas não é semântica.
+            </p>
+        <h2>Texto sobrescrito e subescrito</h2>
+            <p>É possível sobrescrever um termo usando a tag SUP, por exemplo x<sup>10</sup>+y+<sup>2</sup>=z<sup>30</sup></p>
+            <p>E também subescrever um termo usando a tag SUB, por exemplo H<sub>2</sub>O. </p>
+</body>
+</html>

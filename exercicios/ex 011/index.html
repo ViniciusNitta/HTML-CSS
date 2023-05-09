@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas, áudios e vídeos</title>
+    <link rel="shortcut icon" href="dog.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+        <p>Usando a tag PICTURE podemos definir para uma mesma imagens varías mídias de tamanhos diferentes para se adaptar ao tamanho de tela, devemos usar a tag PICTURE e dentro dela inserir as tags IMG e SOURCE onde IMG é a imagem padrão e SOURCE são as imagens secundárias que vão ser exibidas quando a resolução da tela do usuário tiver resoluções diferentes.</p>
+        
+        <picture>
+            <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+            <img src="imagens/foto-g.png" alt="Imagem grande">
+        </picture>
+
+        <p>**Tomar cuidado com a ordem dentro de PICTURES, as ordens devem estar em sequência descrescente ou crescente.</p>
+
+    <h1>Áudios</h1>
+        <p>Áudios podem ser adicionados usando a tag AUDIO e preenchendo o SRC com o arquivo que deve ser tocado, porém está maneira não é muito indicada pois o navegador pode não ter compatibilidade com o arquivo da música.</p>
+        <p>** Alguns formatos podem ser usados além do MP3 seriam estes o WAV e OGG.</p>
+        <p>Para integrar áudios dentro do site usamos a tag AUDIO, colocamos alguns SOURCEs que vão conter os áudios em formatos diferentes e iremos colocar dentro os atributos, sendo alguns destes o CONTROLS, AUTOPLAY, LOOP e PRELOAD.</p>
+            <ul>
+                <li>controls: irá exibir um player na tela para poder pausar ou reproduzir a música;</li>
+                <li>autoplay: irá tocar a música assim que o site for carregado;</li>
+                <li>loop: irá colocar em loop a música;</li>
+                <li>preload: irá definir o que deverá acontecer com o áudio assim que o site for carregado, tendo 3 varíaveis;</li>
+                <ul>
+                    <li>metadata: vai carregar as informações do arquivo, mas não o arquivo em si;</li>
+                    <li>none: não irá carregar nada, nem informações nem o arquivo, so irá carregar assim que o usuário clicar para reproduzir o áudio;</li>
+                    <li>auto: sendo este o padrão, irá carregar o arquivo de áudio mesmo que o mesmo nunca seja reproduzido.</li>
+                </ul>
+            </ul>
+        
+        <audio preload="metadata" controls loop>
+            <source src="midia/anxiety.mp3" type="audio/mpeg">
+            <source src="midia/anxiety.wav" type="audio/wav">
+            <source src="midia/anxiety.ogg" type="audio/ogg">
+            <p>Seu navegador não consegue reproduzir o áudio <a href="midia/anxiety.mp3" download="midia/anxiety.mp3" type="audio/mpeg" target="-blank">Clique aqui para baixar o arquivo</a></p>
+        </audio>
+
+    <h1>Vídeos Hospedados no Próprio Servidor</h1>
+        <p>Vídeos são inseridos usando a tag VIDEO e usam os mesmos atributos que o AUDIO (controls, autoplay, loop e predata), com o diferencial de ter a opção WIDTH e THUMB onde deve ser pré-definido o tamanho que o vídeo será exibido e a imagem que vai aparecer antes da exibição.</p>
+
+        <video width="300px" poster="dog.ico" preload="metadata" controls>
+            <source src="midia/video.mp4" type="video/mp4">
+            <source src="midia/video.webm" type="video/webm">
+            <source src="midia/video.ogv" type="video/ogg">
+            <source src="midia/video.m4v" type="video/mp4">
+            <p>Seu navegador não consegue reproduzir este vídeo <a href="midia/video.mp4" download="midia/video.mp4" target="_blank" type="video/mpeg">Clique aqui para baixar o vídeo</a> </p>
+        </video>
+
+        <p>** Uma dica para converter arquivos é o programa Handbrake que é open source</p>
+    <h1>Vídeos Hospedadados em Servidor Externo</h1>
+        <h2>Youtube</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/U0kxkksURss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h2>Vimeo</h2>
+            <iframe src="https://player.vimeo.com/video/185871317?h=a63f42bf1b" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

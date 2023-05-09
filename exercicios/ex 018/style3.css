@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+
+body {
+    background-image: linear-gradient(to right, rgb(242, 242, 166), rgb(249, 249, 118));
+    font: 1em Arial, sans-serif;
+}
+main {
+    background-color: white;
+    width: 800px;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.352);
+    margin: auto;
+}
+h1 {
+    font: bolder 3em 'Times New Roman',serif ;
+    text-align: center;
+}
+p {
+    text-align: justify;
+    text-indent: 30px;
+}

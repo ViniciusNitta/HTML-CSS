@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e Âncoras</title>
+    <link rel="shortcut icon" href="dog.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Criando links dentro do site</h1>
+        <h2>HyperLink/Âncoras</h2>
+            <p>A criação de links dentro de sites melhora a experiência do usuário dentro de um site, deixando mais fácil que ele encontre conteúdos relacionados com o que ele busca encontrar, usando a tag A e preenchendo o atributo <code>href</code> podemos criar um hyperlink que redireciona o usuário para o link preechido. </p>
+            <ul>
+                <li><a href="https://github.com/gustavoguanabara">Acesse o link para ter aulas de programação gratuitas! </a></li>
+                <li><a href="https://www.youtube.com">Acesse o link para ir até o YouTube!</a></li>
+            </ul>
+            <p>Outro atributo importante é o <code>hreflang</code> onde colocamos qual é a língua do site que está no hyperlink, assim quando o usuário acessar o link ele terá a opção de tradução da pagína.</p>
+            <a href="https://www.w3schools.com/" hreflang="en">Site da W3Schools!</a>
+            <p>Um problema encontrado nessas situações é que o hyperlink redireciona o usuário diretamente para o link, que pode acabar perdendo a pagína atual, o método de resolver isso é usando a tag TARGET, que pode ser configurada de duas maneiras, <code>_self</code> e <code>_blank</code> 
+                <br>_self irá abrir o link na pagína atual, sendo este a configuração padrão.
+                <br>_blank irá abrir o link em outra página.
+            </p>
+            <ul>
+                <li><a href="https://www.w3schools.com/" hreflang="en" target="_self">Site da W3Schools!(Ir para o site)</a></li>
+                <li><a href="https://www.w3schools.com/" hreflang="en" target="_blank">Site da W3Schools!(Abrir o site em uma nova guia)</a></li>
+            </ul>
+            <p>Outra funcionalidade interessante é indicar qual é a natureza de destino, para isso usamos a tag REL, está aceita varías funções, entre elas:</p>
+                <ol type="I">
+                    <li>next: indica que o link é a continuação do link atual;</li>
+                    <li>prev: indica que o link é a parte anterior do link atual;</li>
+                    <li>author: indica que é um link para o autor do site;</li>
+                    <li>exthernal: indica que o link é para um site externo;</li>
+                    <li>nofollow: indica que o link é para um site não endossado, como um site pago.</li>
+                </ol>
+            <p>Este é um exemplo de um link interno onde o usuário vai ser redirecionado para uma outra pagína dentro do mesmo site, dessa maneira não é necessário ter a URL completa.</p>
+            <ul>
+                <li>Continuar navegando na <a href="pagina2.html" target="_self" rel="next">segunda página</a></li>
+                <li>Ir para nossa <a href="doc/pagina3.html" target="_self" rel="next">terceira página</a></li>
+            </ul>
+            <p>Já este é um link externo onde o usuário vai ser redirecionado para uma outra pagína em outro site, dessa maneira sendo necessário a URL inteira inclusive os protocolos https:// e http://</p>
+            <a href="https://www.youtube.com/@LivesAlanzoka" target="_blank" rel="exthernal">Link para o canal do Alanzoka.</a>
+        <h2>Downloads</h2>
+            <p>Para criar downloads devemos criar um hyperlink(âncora) e adicionar a funcionalidade <code>download</code> dentro da tag, outro ponto importante é colocar o tipo de arquivo que está sendo disponibilizado, para isso deve ser usado o <code>type</code>, por exemplo:</p>
+            <ul>
+                <li>Baixe meu icone de <a href="arquivos/dog.zip" download="dog.zip" type="zip">doguinho</a></li>
+            </ul>
+</body>
+</html>

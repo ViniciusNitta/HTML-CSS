@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+    <link rel="shortcut icon" href="dog.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Outras formatações</h1>
+        <h2>Código-fonte e Pré Formatação</h2>
+            <p>Em algumas situações precisamos destacar determinados termos de maneira que tornem-se facilmente identíficaveis, como por exemplo códigos-fonte, para isso usamos a tag CODE que irá dar um efeito visual único de monoespaçamento.
+                <br> "O comando <code>document.getElementById('test')</code> é escrito em JavaScrip.""
+            </p>
+            <p>Usando a tag CODE conseguimos o monoespaçamento, porém isso não organiza as linhas, para isso podemos usar a tag PRE que irá apresentar os termos como eles foram pré-estabelecidos, inclusive espaços e linhas vazias.</p>
+            <p>Apenas com a tag CODE:</p>
+                <code>
+                num = input(Digite um número inteiro)
+                if num % 2 == 0:
+                    print(f'O número {num} é par.')
+                else:
+                    print(f'O número {num} é ímpar.')
+                print('Fim do programa')
+                </code>
+            <p>Com a tag PRE :</p>
+            <pre>
+                <code>
+                            num = input(Digite um número inteiro)
+                            if num % 2 == 0:
+                                print(f'O número {num} é par.')
+                            else:
+                                print(f'O número {num} é ímpar.')
+                            print('Fim do programa')
+                </code>
+            </pre>
+        <p>**Selecionar as linhas e apertar Shift+Tab recua todo o conteúdo sem alterar a formatação,caso queira avançar o conteúdo é só selecionar as linhas e apertar Tab</p>
+        <h2>Citações Simples</h2>
+        <p>Em citações utilizamos a tag Q que adiciona as aspas.</p>
+        <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido</q></p>
+        <h2>Citações Completas</h2>
+        <p>Em citações mais completas podemos usar a tag BLOCKQUOTE que irá modificar um pouco a formatação do texto:</p>
+        <blockquote>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae accusantium expedita ex sed cum itaque, facere atque facilis consectetur velit veniam quae aliquid dolor doloremque iure esse ab eligendi exercitationem?
+        </blockquote>
+        <h2>Abreviações</h2>
+        <p>Quando usamos abreviações podemos usar a tag ABBR para adicionar o significado dessa abreviação(Só passar o mouse em cima).</p>
+        <p>Eu estudo <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+        <h2>Texto Invertido</h2>
+        <p>Essa opção serve para inverter o texto, não tem muita utilidade mas ela existe só usar a tag: <code>bdo dir="rtl"</code>.</p>
+        <p><bdo dir="rtl">Eu estudo HTML e CSS.</bdo></p>
+</body>
+</html>
