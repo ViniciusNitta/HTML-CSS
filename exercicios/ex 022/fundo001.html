@@ -5,7 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adicionando Imagens no Background</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url(imagens/pattern004.png);
+        }
+        div.quadrado {
+            height: 300px;
+            width: 300px;
+            display: inline-block;
+            margin: 10px;
+            border-radius: 10px;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        div#q1 {
+            background-color: aquamarine;
+        }
+        div#q2 {
+            background-image: linear-gradient(to right , black , yellow);
+        }
+        div#q3 {
+            background-image: url(imagens/pattern001.png);
+        }
+    </style>
 </head>
 
 <body>
