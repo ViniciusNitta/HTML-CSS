@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+body {
+    background-image: url(imagens/pattern003.png);
+}
 div.quadrado {
     height: 300px;
     width: 300px;
