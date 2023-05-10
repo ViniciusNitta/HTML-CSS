@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+div.class {
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+}
