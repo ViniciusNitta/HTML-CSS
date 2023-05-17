@@ -3,17 +3,16 @@
     padding: 0px;
     margin: 0px;
 }
-
 html, body {
-   
     width: 100vw;
     height: 100vh;
 }
-
 body {
     background: url(imagens/fundo-madeira.jpg) center center no-repeat fixed;
     background-size: cover;
 }
+
+
 main {
     height: 100vh;
     position: relative;
@@ -35,22 +34,20 @@ main {
     height: 471px;
 }
 
-ul {
-    list-style: none;
-    float: right;
+
+#redes {
+    text-align: right;
 }
 img{
     width: 60px;
-    height: 60px;
     border-radius: 50%;
     margin: 10px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.300);
-    border: 2px solid rgba(0, 0, 0, 0);
+    box-sizing: border-box;
 }
 img:hover {
-    transition-duration: 0.5s;
-    transform: scale(1.1);
-    transform: translate(-5px);
-    border: 2px solid white;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.500);
+    transition: translate 0.5s, border 1s;
+    transform: translate(-5px, -5px);
+    border: 3px solid white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.700);
 }
