@@ -5,10 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iframes</title>
+    <style>
+        iframe#video {
+            width: 100%;
+            height: 100%;
+
+        }
+        iframe#mapas {
+            width: 100%;
+            height: 100%;
+        }
+        div {
+            max-width: 800px;
+            min-width: 300px;
+            height: 50vh;
+            background-color: lightgray;
+            padding: 3vw;
+            margin: auto;
+            border-radius: 5px;
+
+        }
+    </style>
 </head>
 <body>
     <h1>Adicionando Conteúdos com Iframe</h1>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa sapiente sunt ut debitis numquam cumque eveniet et temporibus ullam aut, libero architecto, nulla ex nesciunt. Corporis, deleniti esse. Similique, iure!</p>
     <h2>Vídeos</h2>
+    <div><iframe id="video" src="https://www.youtube.com/embed/ArRAj6UdxYo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+    <h2>Mapas</h2>
+    <div><iframe id="mapas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.8101382863!2d-49.29288699456865!3d-25.478014485267828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce35d8fd77e69%3A0x7e40791e81a1e36c!2sPalladium%20Shopping%20Center!5e0!3m2!1spt-BR!2sbr!4v1684347547989!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
 </body>
 </html>
