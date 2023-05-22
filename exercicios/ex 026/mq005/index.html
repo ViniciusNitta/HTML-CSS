@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/media-query.css" media="screen">
+</head>
+<body>
+
+    <header>
+        <h1>Meu Site</h1>
+        <span id="icone" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="idmenu">
+            <li><a href="">Opção 1</a></li>
+            <li><a href="">Opção 2</a></li>
+            <li><a href="">Opção 3</a></li>
+            <li><a href="">Opção 4</a></li>
+            <li><a href="">Opção 5</a></li>
+            <li><a href="">Opção 6</a></li>  
+        </menu>
+    </header>
+
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda sed facere aliquid voluptas voluptatibus odit laborum repudiandae, enim itaque debitis libero, repellendus necessitatibus officia reprehenderit expedita quaerat unde vitae! Molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt officiis ipsa commodi, consectetur beatae culpa ipsum perspiciatis expedita, illo maiores soluta debitis officia obcaecati nobis? Tempore ratione aspernatur saepe consequatur?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda sed facere aliquid voluptas voluptatibus odit laborum repudiandae, enim itaque debitis libero, repellendus necessitatibus officia reprehenderit expedita quaerat unde vitae! Molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt officiis ipsa commodi, consectetur beatae culpa ipsum perspiciatis expedita, illo maiores soluta debitis officia obcaecati nobis? Tempore ratione aspernatur saepe consequatur?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda sed facere aliquid voluptas voluptatibus odit laborum repudiandae, enim itaque debitis libero, repellendus necessitatibus officia reprehenderit expedita quaerat unde vitae! Molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt officiis ipsa commodi, consectetur beatae culpa ipsum perspiciatis expedita, illo maiores soluta debitis officia obcaecati nobis? Tempore ratione aspernatur saepe consequatur?</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+            if (idmenu.style.display == 'block') {
+                idmenu.style.display = 'none'
+            } else {
+                idmenu.style.display ='block'
+            }
+        }
+    </script>
+    
+</body>
+</html>
