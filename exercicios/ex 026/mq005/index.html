@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="estilos/style.css" media="all">
     <link rel="stylesheet" href="estilos/media-query.css" media="screen">
 </head>
-<body>
+<body onresize="mudouTamanho()">
 
     <header>
         <h1>Meu Site</h1>
@@ -40,6 +40,14 @@
                 idmenu.style.display = 'none'
             } else {
                 idmenu.style.display ='block'
+            }
+        }
+
+        function mudouTamanho () {
+            if (window.innerWidth >= 992) {
+                idmenu.style.display = 'block'
+            } else {
+                idmenu.style.display = 'none'
             }
         }
     </script>

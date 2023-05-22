@@ -14,19 +14,19 @@ body {
 
 
 header {
-    background-color: rgb(158, 158, 158);
+    background-color: rgb(128, 127, 127);
 }
 header > h1 {
     font-size: 3em;
     padding: 10px;
     text-align: center;
 }
-
 #icone {
     background-color: rgb(45, 45, 45);
     color: white;
     display: block;
     padding: 10px;
+    text-align: center;
 }
 #icone:hover {
     background-color: white;
@@ -45,10 +45,10 @@ menu > li > a {
     background-color: rgb(85, 85, 85);
     padding: 10px;
     text-decoration: none;
-    border: 2px solid rgb(158, 158, 158);
+    border: 2px solid rgb(128, 127, 127);
 }
 menu > li > a:hover {
-    background-color: gray;
+    background-color: black;
 }
 
 
@@ -70,3 +70,4 @@ article > p {
     text-align: justify;
     margin-bottom: 20px;
 }
+
